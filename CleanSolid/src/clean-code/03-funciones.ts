@@ -13,12 +13,12 @@
   }
 
   interface MovieInformation {
-    cast       : string[];
+    cast: string[];
     description: string;
-    rating     : number;
-    title      : string;
+    rating: number;
+    title: string;
   }
-  function setMovie({title, description, rating, cast}: MovieInformation) {
+  function setMovie({ title, description, rating, cast }: MovieInformation) {
     console.log({ title, description, rating, cast });
   }
 
@@ -34,5 +34,15 @@
 
   }
 
-})();
+  // Continuacion - Leccion 18
+  const getPayAmount = ({ isDead = false, isSeparated = true, isRetired = false }): number => {
+
+    if (isDead) return 1500;
+
+    if (isSeparated) return 2500;
+
+    return isRetired ? 3000 : 4000;
+  }
+
+}) ();
 
